@@ -1,3 +1,19 @@
+// Base
+@import 'base/reset';
+@import 'base/typography';
+
+// Utils
+@import 'utils/variables';
+@import 'utils/mixins';
+
+// Components
+@import 'components/header';
+@import 'components/footer';
+
+// Pages
+@import 'pages/home';
+@import 'pages/about';
+
 .App {
   text-align: center;
 }

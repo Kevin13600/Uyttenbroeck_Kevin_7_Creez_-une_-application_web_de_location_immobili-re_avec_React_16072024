@@ -1,0 +1,13 @@
+$header-bg: #f0f0f0;
+
+.header {
+  background-color: $header-bg;
+  
+  &__nav {
+    display: flex;
+    
+    &-item {
+      margin-right: 10px;
+    }
+  }
+}

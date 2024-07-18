@@ -1,0 +1,24 @@
+// Couleurs
+$color-primary: #FF6060;     // Rouge utilisé pour les titres et certains éléments
+$color-background: #F6F6F6;  // Gris clair utilisé comme fond
+$color-white: #FFFFFF;       // Blanc pour le texte sur fond coloré
+$color-black: #000000;       // Noir pour le texte principal
+
+// Typographie
+$font-primary: 'Arial', sans-serif;  // Remplacez par la police exacte si spécifiée
+
+// Tailles de police
+$font-size-small: 12px;
+$font-size-medium: 16px;
+$font-size-large: 24px;
+$font-size-xlarge: 36px;
+
+// Breakpoints
+$breakpoint-mobile: 768px;
+$breakpoint-tablet: 1024px;
+
+// Espacements
+$spacing-small: 8px;
+$spacing-medium: 16px;
+$spacing-large: 24px;
+$spacing-xlarge: 32px;

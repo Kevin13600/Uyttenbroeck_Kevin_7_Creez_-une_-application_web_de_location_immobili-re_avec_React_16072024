@@ -1,0 +1,18 @@
+// src/sass/components/_Footer.scss
+@import '../utils/variables';
+@import '../utils/mixins';
+
+.footer {
+  background-color: $color-black; 
+  color: $color-white;
+  padding: 20px;
+  text-align: center;
+
+  &__logo {
+    margin-bottom: 20px;
+  }
+
+  &__copyright {
+    font-size: 14px;
+  }
+}

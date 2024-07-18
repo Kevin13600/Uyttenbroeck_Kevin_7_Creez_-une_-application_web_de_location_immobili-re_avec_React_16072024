@@ -1,0 +1,70 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
+.home {
+  &__hero {
+    position: relative;
+    width: 100%;
+    height: 223px;
+    border-radius: 25px;
+    overflow: hidden;
+    margin-bottom: 43px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.3); 
+    }
+
+    &-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &-title {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: $color-white;
+      font-size: 48px;
+      text-align: center;
+      width: 100%;
+      padding: 0 20px;
+      z-index: 1; // Assurez-vous que le texte est au-dessus de l'overlay
+    }
+  }
+
+  &__gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 50px;
+    padding: 56px 50px;
+    background-color: $color-grey-light;
+    border-radius: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    &__hero {
+      height: 111px;
+      margin-bottom: 22px;
+
+      &-title {
+        font-size: 24px;
+      }
+    }
+
+    &__gallery {
+      grid-template-columns: 1fr;
+      gap: 20px;
+      padding: 22px 20px;
+    }
+  }
+}

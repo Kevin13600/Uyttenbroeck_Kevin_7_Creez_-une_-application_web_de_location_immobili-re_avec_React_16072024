@@ -1,17 +1,19 @@
 import React from 'react';
 import '../sass/pages/_home.scss';
+import Banner from '../components/Banner';
 import natureImage from '../assets/nature.svg';
+import Card from '../components/Card';
+import Data from '../data/logements.json';
 
 function Home() {
   return (
     <div className="home">
-      <div className="home__hero">
-        <img src={natureImage} alt="Nature" className="home__hero-image" />
-        <h1 className="home__hero-title">Chez vous, partout et ailleurs</h1>
+      <Banner title="Chez vous, partout et ailleurs" image={natureImage} />
+      <div className="home__gallery">
+        {Data.map((logement) => (
+          <Card key={logement.id} logement={logement} />
+        ))}
       </div>
-      <section className="home__gallery">
-        {/* logements */}
-      </section>
     </div>
   );
 }

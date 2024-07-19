@@ -2,7 +2,7 @@
 @import '../utils/mixins';
 
 .header {
-  width: 100%;
+  width: 90%;
   max-width: 1240px; 
   margin: 0 auto;
   padding: 20px;
@@ -21,10 +21,6 @@
   &__nav {
     display: flex;
     gap: 57px;
-    
-    &-item:first-child {
-      margin-left: 50px;
-    }
 
     &-item {
       text-decoration: none;
@@ -44,12 +40,16 @@
     justify-content: space-around;
     
     &__logo {
-      margin-bottom: 20px;
+      width: 145px;
+      height: 46px;
     }
     
     &__nav {
-      width: 100%;
+      gap: 26px;
       white-space: nowrap;
     }
+    &__nav-item {
+        font-size: 16px;
+      }
   }
 }

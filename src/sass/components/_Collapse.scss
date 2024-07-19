@@ -1,0 +1,44 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
+
+.collapse {
+    margin-bottom: 20px;
+    
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #FF6060;
+      color: white;
+      padding: 0 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      max-width: 63.938rem;
+      height: 52px; 
+    }
+  
+    &__arrow {
+      transition: transform 0.3s ease;
+      font-size: 24px;
+      
+      &.open {
+        transform: rotate(180deg);
+      }
+    }
+  
+    h3 {
+      margin: 0; 
+      font-size: 18px; 
+    }
+  
+    &__content {
+      background-color: #F6F6F6;
+      padding: 20px;
+      margin-top: 2px;
+      border-radius: 5px;
+      animation: slideDown 0.3s ease-out;
+    }
+  }
+  
+  

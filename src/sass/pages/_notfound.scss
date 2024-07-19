@@ -1,0 +1,46 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
+.notfound {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 139px;
+    
+    
+    &__number {
+        color: $color-primary;
+        font-size: 288px;
+        margin: 0;
+        font-weight: 800; 
+    }
+    
+    &__p {
+        color: $color-primary;
+        font-size: $font-size-xlarge;
+        text-align: center; 
+        margin: 0; 
+    }
+    
+    &__backhome {
+        color: $color-black;
+        font-size: 18px;
+        margin: 0;
+    }
+}
+
+@include mobile {
+    .notfound { 
+        
+
+        &__number {
+            margin-top: 70px;
+            font-size: 144px; 
+        }
+        
+        &__p {
+            font-size: $font-size-large; 
+        }
+    }
+}

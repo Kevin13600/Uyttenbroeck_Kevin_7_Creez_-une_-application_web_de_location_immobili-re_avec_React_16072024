@@ -16,3 +16,13 @@
     font-size: 14px;
   }
 }
+
+@include mobile {
+  .footer {
+    height: 209px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

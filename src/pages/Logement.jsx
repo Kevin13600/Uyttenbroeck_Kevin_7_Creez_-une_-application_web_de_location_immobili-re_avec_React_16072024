@@ -1,5 +1,5 @@
-import React from 'react';
-import { useParams } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
 import Slideshow from '../components/Slideshow';
 import data from '../data/logements.json';
 import Tag from '../components/Tag';
@@ -10,11 +10,17 @@ import '../sass/pages/_logement.scss';
 
 function Logement() {
   const { id } = useParams();
+  const navigate = useNavigate();
+  
   const logement = data.find(item => item.id === id);
 
-  if (!logement) {
-    return <div>Logement non trouvé</div>;
-  }
+  useEffect(() => {
+    if (!logement) {
+      navigate('/not-found');
+    }
+  }, [logement, navigate]);
+
+  if (!logement) return null; 
 
   return (
     <div className="logement">
@@ -36,7 +42,6 @@ function Logement() {
           <Rating rating={logement.rating} />
         </div>
       </div>
-
       <div className="logement__collapse">
         <Collapse 
           key="description" 

@@ -9,17 +9,14 @@
 
 .main-content {
   flex: 1;
-  max-width: 1240px;
+  max-width: $breakpoint-tablet;
   margin: 0 auto;
-  padding: 20px;
+  padding: $spacing-large;
   width: 90%;
 }
 
-
-
-
 @include mobile {
   .main-content {
-    padding: 10px;
+    padding: $spacing-small;
   }
 }

@@ -1,0 +1,12 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
+.tag {
+    @include flex-center;
+    background-color: $color-primary;
+    width: 115px;
+    height: 25px;
+    border-radius: 15px;
+    color: $color-white;
+    font-size: $font-size-small;
+}

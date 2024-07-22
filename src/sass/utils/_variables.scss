@@ -6,17 +6,19 @@ $color-black: #000000;
 $color-grey-light: #F6F6F6;
 
 // Typographie
-$font-primary: 'Arial', sans-serif;  
+$font-primary: 'Montserrat', sans-serif;  
 
 // Tailles de police
-$font-size-small: 12px;
+$font-size-xsmall: 12px;
+$font-size-small: 14px;
 $font-size-medium: 16px;
 $font-size-large: 24px;
 $font-size-xlarge: 36px;
 
 // Breakpoints
 $breakpoint-mobile: 768px;
-$breakpoint-tablet: 1024px;
+$breakpoint-tablet: 1240px;
+$breakpoint-homepage: 1440px;
 
 // Espacements
 $spacing-small: 8px;

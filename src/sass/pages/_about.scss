@@ -1,4 +1,6 @@
-// src/sass/pages/_about.scss
+@import '../utils/variables';
+@import '../utils/mixins';
+
 .about {
     &__content {
       max-width: 1000px;
@@ -7,7 +9,6 @@
     }
   }
   
-  // Ajustez le style du Banner si nécessaire
   .banner {
     height: 220px;
     border-radius: 25px;

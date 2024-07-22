@@ -1,4 +1,3 @@
-// src/components/Footer.jsx
 import React from 'react';
 import Logo from './Logo';
 import '../sass/components/_Footer.scss';

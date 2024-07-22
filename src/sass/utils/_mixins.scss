@@ -23,6 +23,12 @@
       @content;
     }
   }
+
+  @mixin homepage {
+    @media (max-width: $breakpoint-homepage) {
+      @content;
+    }
+  }
   
   // Boutons
   @mixin button-style {

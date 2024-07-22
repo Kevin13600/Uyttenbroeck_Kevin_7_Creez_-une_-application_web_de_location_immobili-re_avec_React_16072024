@@ -1,6 +1,5 @@
 // Base
 @import 'base/reset';
-@import 'base/typography';
 
 // Utils
 @import 'utils/variables';
@@ -11,10 +10,14 @@
 @import 'components/footer';
 @import 'components/Layout';
 @import 'components/Collapse';
+@import 'components/Tag';
+@import 'components/Slideshow';
 
 // Pages
 @import 'pages/home';
 @import 'pages/about';
+@import 'pages/logement';
+@import 'pages/notfound';
 
 
 

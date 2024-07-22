@@ -5,14 +5,12 @@
   width: 90%;
   max-width: 1240px; 
   margin: 0 auto;
-  padding: 20px;
+  padding: $spacing-large;
   background-color: $color-white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flex-between;
 
   &__logo {
-    color: #FF6060;
+    color: $color-primary;
     width: 210px; 
     height: 68px;
     flex-shrink: 0; 
@@ -27,13 +25,13 @@
       color: $color-black;
       font-size: $font-size-large;
       white-space: nowrap; 
+
       &:hover {
         text-decoration: underline;
       }
     }
   }
 }
-
 
 @include mobile {
   .header {
@@ -47,9 +45,10 @@
     &__nav {
       gap: 26px;
       white-space: nowrap;
-    }
-    &__nav-item {
-        font-size: 16px;
+
+      &-item {
+        font-size: $font-size-medium;
       }
+    }
   }
 }

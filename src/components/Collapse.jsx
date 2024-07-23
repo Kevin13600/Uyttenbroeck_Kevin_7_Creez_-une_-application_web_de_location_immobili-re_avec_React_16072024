@@ -17,11 +17,12 @@ function Collapse({ title, content }) {
       </div>
       {isOpen && (
         <div className="collapse__content">
-          <p>{content}</p>
+          {typeof content === 'string' ? <p>{content}</p> : content}
         </div>
       )}
     </div>
   );
 }
+
 
 export default Collapse;

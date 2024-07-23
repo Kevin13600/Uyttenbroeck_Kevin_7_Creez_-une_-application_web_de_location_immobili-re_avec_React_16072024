@@ -26,8 +26,10 @@
       font-size: $font-size-large;
       white-space: nowrap; 
 
-      &:hover {
+      &:hover,
+      &.active {
         text-decoration: underline;
+      
       }
     }
   }

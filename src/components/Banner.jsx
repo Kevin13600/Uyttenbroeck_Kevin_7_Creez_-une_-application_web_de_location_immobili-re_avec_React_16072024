@@ -1,5 +1,4 @@
 import React from 'react';
-import '../sass/components/_Footer.scss';
 
 function Banner({title=null, image}) {
   return (

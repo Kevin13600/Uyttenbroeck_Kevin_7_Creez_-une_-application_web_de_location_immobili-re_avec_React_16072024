@@ -17,7 +17,7 @@ function Collapse({ title, content }) {
       </div>
       {isOpen && (
         <div className="collapse__content">
-          {typeof content === 'string' ? <p>{content}</p> : content}
+          {content}
         </div>
       )}
     </div>
